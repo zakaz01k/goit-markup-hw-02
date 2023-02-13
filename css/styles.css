@@ -15,7 +15,16 @@ body {
 	color: var(--primary-text-color);
 	font-family: "Roboto", sans-serif;
 }
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
 
+header {
+	background-color: var(--title-hero-color);
+}
 /* Logo */
 .logo-web {
 	color: var(--primary-link-color);
@@ -26,7 +35,7 @@ body {
 	line-height: 24px;
 	text-transform: uppercase;
 }
-.logo-studio {
+header .logo-studio {
 	color: var(--title-text-color);
 }
 /* Navigation */
@@ -74,6 +83,9 @@ body {
 	color: var(--hover-link-color);
 }
 /* Hero */
+.hero {
+	background-color: var(--title-text-color);
+}
 .hero-title {
 	color: var(--title-hero-color);
 	font-style: normal;
@@ -82,9 +94,17 @@ body {
 	line-height: 60px;
 }
 .hero-button {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
 	color: var(--title-hero-color);
 	background-color: var(--hero-button-background-color);
 	cursor: pointer;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	border: 1px;
 }
 
 .hero-button:hover,
@@ -112,6 +132,10 @@ body {
 	font-size: 16px;
 	line-height: 24px;
 }
+
+.section.team {
+	background-color: var(--category-button-bg-c);
+}
 /* Advantages */
 .advantages-list .title {
 	color: var(--title-text-color);
@@ -125,10 +149,6 @@ body {
 	line-height: 24px;
 }
 
-footer > .text {
-	font-size: 16px;
-	line-height: 24px;
-}
 /* Portfolio.html */
 .category-button .button {
 	color: var(--primary-link-color);
@@ -153,4 +173,20 @@ footer > .text {
 }
 .category-button {
 	list-style: none;
+}
+
+/* Footer */
+footer .logo-studio {
+	color: var(--category-button-bg-c);
+}
+
+footer {
+	background-color: var(--title-text-color);
+}
+
+footer > .text {
+	color: var(--category-button-border-c);
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.02em;
 }
